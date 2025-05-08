@@ -18,4 +18,45 @@ Libraries Used: random, string
 - Generates randomized, secure passwords based on user-defined length
 - Console-based user interaction for simplicity and accessibility
 
+<br />
+import random
+import string
 
+print("Welcome to Your Secure Password Generator!")
+
+def generate_password(length=8):
+    if length < 8:
+        raise ValueError("Password must be at least 8 characters long.")
+
+    # Ensure at least one of each required character type
+    upper = random.choice(string.ascii_uppercase)
+    digit = random.choice(string.digits)
+    symbol = random.choice(string.punctuation)
+
+    # Fill the rest of the password
+    remaining_length = length - 3
+    all_chars = string.ascii_letters + string.digits + string.punctuation
+    remaining_chars = [random.choice(all_chars) for _ in range(remaining_length)]
+
+    # Combine and shuffle
+    password_list = list(upper + digit + symbol + ''.join(remaining_chars))
+    random.shuffle(password_list)
+
+    return ''.join(password_list)
+
+# Loop to allow multiple password generations
+while True:
+    try:
+        length = int(input("Enter password length (minimum 8): "))
+        if length < 8:
+            print("Password must be at least 8 characters long.")
+            continue
+        print("Generated Password:", generate_password(length))
+    except ValueError:
+        print("Please enter a valid number.")
+        continue
+
+    again = input("Would you like to generate another password? (yes/no): ").strip().lower()
+    if again != 'yes':
+        print("Goodbye! Have a great day!")
+        break
