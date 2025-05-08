@@ -4,11 +4,12 @@ In today's increasingly digital and security-conscious environment, the ability 
 
 This application accepts user input for the desired password length—enforcing a minimum of eight characters as recommended by the National Institute of Standards and Technology (NIST). The tool programmatically constructs a password that satisfies key complexity requirements: it includes at least one uppercase letter, one numerical digit, and one special character, ensuring robustness against common attack vectors such as brute-force and dictionary attacks.
 
-By integrating user-defined parameters with security best practices, this project demonstrates my focus on usability, compliance, and practical cybersecurity principles. It reflects my capability to build tools that address real-world user behavior while upholding technical standards in software development.
+By integrating user-defined parameters with security best practices, this project demonstrates my focus on usability, compliance, and practical cybersecurity principles. It reflects my capability to build tools that address real-world user behavior while upholding technical standards in software development.__
 
 **Technical Summary:**
+
 Language: Python
-Libraries Used: random, string
+Libraries Used: random, string__
 
 **Key Features:**
 - Enforces NIST-compliant minimum password length (8+ characters)
