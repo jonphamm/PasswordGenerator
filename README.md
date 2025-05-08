@@ -1,5 +1,5 @@
 <br >
-**Secure Password Generator – Project Overview**
+#Secure Password Generator – Project Overview
 
 In today's increasingly digital and security-conscious environment, the ability to generate strong, reliable passwords is critical to protecting sensitive user data and online assets. Recognizing the widespread issue of weak or reused passwords, I developed a secure password generator designed to automate the creation of complex, random passwords that align with modern security standards.
 
@@ -9,14 +9,14 @@ By integrating user-defined parameters with security best practices, this projec
 <br />
 
 <br >
-**Technical Summary:**
+##Technical Summary:
 
 Language: Python
 Libraries Used: random, string
 <br />
 
 <br >
-**Key Features:**
+##Key Features:
 
 - Enforces NIST-compliant minimum password length (8+ characters)
 - Ensures inclusion of uppercase letters, digits, and special characters
