@@ -6,13 +6,13 @@ This application accepts user input for the desired password length—enforcing 
 
 By integrating user-defined parameters with security best practices, this project demonstrates my focus on usability, compliance, and practical cybersecurity principles. It reflects my capability to build tools that address real-world user behavior while upholding technical standards in software development.
 
-
+<br />
 **Technical Summary:**
 
 Language: Python
 Libraries Used: random, string
 
-
+<br />
 **Key Features:**
 
 - Enforces NIST-compliant minimum password length (8+ characters)
